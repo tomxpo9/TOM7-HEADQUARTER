@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TOM7 HEADQUARTER</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h2 class="title" id="MATRIX"></h2>
+
+    <div class="scripts-panel">
+        {% for script, status in scripts.items() %}
+        <div class="script-card" data-script="{{ script }}">
+            <h3 class="script-name">{{ aliases[script] }}</h3>
+            <p class="status-text">BOTNET STATUS:
+                <span class="status {% if status=='Services Not Available!' %}not-available{% endif %}"
+                      id="status-{{ script|replace('.','-') }}">{{ status }}</span>
+            </p>
+            <div class="buttons-row">
+                <button onclick="runScript('{{ script }}')">EXPLOIT</button>
+                <button onclick="stopToolConfirm('{{ script }}')">STOP</button>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <p class="MSG">Headquarter Of TOM7. All Tools Were Made For Cyber Weapon. I Will Not Be Responsible For Any Destruction Caused. All Responsibility Is Yours.<br>Algorithm Destroyer<br>Network Maniacs<br>System Of Down</p>
+    <h2 class="COPY">&copy;TOM7 2025</h2>
+
+    <!-- PTY interactive shell panel (centered under .COPY) -->
+    <div class="TCONTAINER">
+        <div class="CMDWRAP" id="pty-wrapper">
+            <div class="CMDOUT" id="pty-output"></div>
+            <div class="CMDT">
+                <input class="ICMD" id="pty-input" type="text" placeholder="Type here to send to shell (press Enter to send)">
+                <button id="pty-send">ENTER</button>
+                <button id="pty-ctrlc" disabled>CTRL+C</button>
+                <button id="pty-ctrlz" disabled>CTRL+Z</button>
+                <button id="pty-clear">Clear Output</button>
+                <button id="pty-start">Start Shell</button>
+            </div>
+            <div class="PRINT">Interactive shell: use this for live commands. For interactive TTY apps prefer Run (Terminal).</div>
+        </div>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="{{ url_for('static', filename='script2.js') }}"></script>
+<script src="{{ url_for('static', filename='script3.js') }}"></script>
+<script src="{{ url_for('static', filename='script4.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    font-family: 'Iceland', monospace;
+    background-color: #0a0a0a;
+    color: #f5f4f7;
+    overflow-x: hidden;
+}
+
+.title {
+    font-family: 'New Rocker', cursive;
+    text-align: center;
+    font-size: 3em;
+    color: #000000;
+    background: linear-gradient(90deg, #5b0085 0%, #002aff 100%);
+    padding: 15px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ff01f2, 0 0 20px #8000ff;
+    border-radius: 10px;
+    animation: flicker 5s infinite;
+}
+
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+    20%, 22%, 24%, 55% { opacity: 0.4; }
+}
+
+.container { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px;
+}
+
+.scripts-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+}
+
+.script-card {
+    background-color: #000000;
+    border: 2px solid #43474a;
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    box-shadow: 0 0 7px #00ccff, 0 0 15px #b300ff;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.script-card:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    box-shadow: 0 0 20px #ffffff, 0 0 30px #00aaff;
+    border-radius: 30px;
+    border-color: #7b00ff;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.buttons-row button {
+    background-color: #0a0a0a;
+    border: 3px solid #9900ff;
+    color: #ffffff;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #0ff;
+    animation: neonGlow 1.5s infinite alternate;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.buttons-row button:hover {
+    color: #00ff22;
+    border-color: #77ff00;
+    box-shadow: 0 0 20px #0ff, 0 0 30px #ff0000;
+}
+
+@keyframes neonGlow {
+    from { box-shadow: 0 0 5px #0ff; }
+    to { box-shadow: 0 0 20px #ff00e6; }
+}
+
+.status {
+    font-weight: bold;
+    color: #00aeff;
+    text-shadow: 0 0 5px #ffffff;
+    font-family: 'Iceland', monospace;
+}
+
+.status.not-available {
+    color: #faee02;
+    text-shadow: 0 0 1px #00e1ff;
+}
+
+.MSG {
+    color: #ffffff;
+    text-shadow: 0 0 1px #000000;
+    font-family: 'Iceland', monospace;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 60px;
+}
+
+.COPY {
+    font-weight: bold;
+    color: #5a585e;
+    text-shadow: 0 0 1px #000000;
+    font-family: 'New Rocker', cursive;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.TCONTAINER {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:12px;
+}
+
+@keyframes statusGlow {
+    from { text-shadow: 0 0 5px #4000ff; }
+    to { text-shadow: 0 0 20px #9900ff; }
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top:0; left:0;
+    width: 100%; height:100%;
+    background: repeating-linear-gradient(45deg, rgba(255,0,255,0.05) 0px, rgba(0,255,255,0.05) 1px, transparent 2px, transparent 10px);
+    z-index: -1;
+    animation: moveBg 3s linear infinite;
+}
+
+@keyframes moveBg {
+    0% { background-position: 0 0; }
+    100% { background-position: 500px 500px; }
+}
+
+/* PTY output styling */
+.CMDWRAP {
+    width: min(900px, 95%);
+    max-width: 1200px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.CMDOUT {
+    background: transparent;
+    color: #bfffbf;
+    padding: 10px;
+    overflow: auto;
+    font-family: "Iceland", monospace;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-style: italic;
+    border: 3px solid #fffb00;
+    border-radius: 15px;
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    transition: all 0.3s ease-in-out;
+}
+
+.CMDOUT:hover {
+    transform: scale(1.01);
+    font-size: large;
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: 0 0 20px #ffffff, 0 0 30px #00aaff;
+    border-radius: 20px;
+    border-color: #7b00ff;
+}
+
+.CMDT {
+    margin-top:8px;
+    width:100%; 
+    display:flex;
+    justify-content:center;
+    gap:8px;
+}
+
+.CMDT button {
+    background-color: #0a0a0a;
+    border: 3px solid #9900ff;
+    color: #ffffff;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Iceland", monospace;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-shadow: 0 0 5px #0ff;
+    transition: all 0.3s ease-in-out;
+}
+
+.CMDT button:hover {
+    transform: scale(1.03);
+    background-color: #050332;
+    box-shadow: 0 0 20px #ffffff, 0 0 30px #00aaff;
+    border-color: #00ccff;
+    font-style: italic;
+}
+
+.ICMD {
+    width:70%;
+    background: #020202;
+    color: #bfffbf;
+    padding: 10px;
+    border-radius: 6px;
+    overflow: auto;
+    font-family: "Iceland", monospace;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-style: italic;
+    border: 3px solid #fffb00;
+}
+
+.PRINT {
+    color: #ffffff;
+    text-shadow: 0 0 1px #000000;
+    font-family: 'Iceland', monospace;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 60px;
+}

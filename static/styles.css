@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=New+Rocker&family=Audiowide&display=swap');
+
+body {
+    background-color: #000000;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body::before {
+    animation: moveBg 3s linear infinite;
+    background: repeating-linear-gradient(45deg, rgba(0,0,0,0.05) 0px, rgba(0,255,255,0.05) 1px, transparent 2px, transparent 10px);
+    content: "";
+    height:100%;
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+    z-index: -1;
+}
+
+.HEADQUARTER {
+    align-items: center;
+    display: flex; 
+    flex-direction: column; 
+    padding: 20px;
+    margin: 5px;
+}
+
+.LOGO {
+    background-image: url("BN.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+    height: 300px;
+    margin: 0px;
+    width: 300px;
+    z-index: 2;
+}
+
+.WHOAMI {
+    animation: flicker 5s infinite;
+    background: linear-gradient(90deg, #5b0085 0%, #002aff 100%);
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'New Rocker', monospace;
+    font-size: 3em;
+    line-height: 1;
+    margin: 5%;
+    mix-blend-mode: difference;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 0 0 10px #ff01f2, 0 0 20px #8000ff;
+}
+
+.OPTIONS {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.TOOLS-OPTIONS {
+    background-color: #000000;
+    border: 2px solid #0091ff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ffffff;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+    width: 250px;
+}
+
+.TOOLS-OPTIONS:hover {
+    background-color: #050811;
+    background-image: url("G.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: #87cfff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #ffffff, 0 0 30px #00aaff;
+    font-style: italic;
+    font-weight: bolder;
+    transform: scale(1.1);
+}
+
+.TOOLS-NAME {
+    color: #ffffff;
+    font-family: 'Iceland', monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    text-shadow: 0 0 10px #ff01f2, 0 0 20px #8000ff;
+}
+
+.TOOLS-STATUS {
+    color: #ffffff;
+    font-family: 'Iceland', monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    text-align: left;
+    text-shadow: 0 0 3px #00aaff;
+}
+
+.TOOLS-STATUS span {
+    animation: Ops 3s infinite;
+    color: #9900ff;
+    font-family: 'Iceland', monospace;
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1;
+    text-align: left;
+    text-shadow: 0 0 1px #000000;
+}
+
+.TOOLS-STATUS span.not-available  {
+    animation: Ops 1s infinite;
+    color: #ff0000;
+    font-weight: bolder;
+    text-shadow: 0 0 1px #000000;
+}
+
+.OPTIONS-BTN button {
+    background: linear-gradient(90deg, #5b0085 0%, #002aff 100%);
+    border: 3px solid #03001f;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'New Rocker', monospace;
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.OPTIONS-BTN button:hover {
+    border-color: #00aaff;
+    box-shadow: 0 0 20px #0ff;
+    color: #00eeff;
+    text-shadow: 0 0 5px #4000ff;
+}
+
+.MSG {
+    color: #ffffff;
+    font-family: 'Iceland', monospace;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1;
+    padding: 60px;
+    text-align: left;
+    text-shadow: 0 0 1px #000000;
+}
+
+.COPY {
+    color: #5a585e;
+    font-family: 'New Rocker', cursive;
+    font-size: 2rem;
+    font-weight: bolder;
+    line-height: 1;
+    text-align: center;
+    text-shadow: 0 0 5px #000000;
+}
+
+.TCONTAINER {
+    display:flex;
+    justify-content:center;
+    margin: 10px;
+    width:100%;
+}
+
+/* PTY output styling */
+.CMDWRAP {
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    margin: 10px;
+    max-width: 1200px;
+    width: min(900px, 95%);
+}
+
+.CMD-CLI-OUT {
+    background-image: url("AN1.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: linear-gradient(90deg, #5b0085 0%, #002aff 100%);*/
+    border: 3px solid #002c3c;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px #ffffff;
+    color: #bfffbf;
+    font-family: "Iceland", monospace;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-style: italic;
+    height: 400px;
+    line-height: 1;
+    mix-blend-mode: difference;
+    overflow: auto;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    white-space: pre-wrap;
+}
+
+.CMD-CLI-OUT:hover {
+    border-color: #7b00ff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ffffff, 0 0 30px #00aaff;
+    font-size: large;
+    transform: scale(1.005);
+}
+
+.CMD-BTN {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 50px;
+    width: 100%; 
+}
+
+.CMD-BTN button {
+    background-color: #0a0a0a;
+    border: 3px solid #150024;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "Iceland", monospace;
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 1;
+    padding: 10px 10px;
+    text-align: center;
+    text-shadow: 0 0 5px #0ff;
+    transition: all 0.3s ease-in-out;
+}
+
+.CMD-BTN button:hover {
+    background-color: #00d9ff;
+    border-color: #ffffff;
+    box-shadow: 0 0 20px #ffffff, 0 0 30px #00aaff;
+    font-style: italic;
+    transform: scale(1.03);
+}
+
+.CMD-CLI-INPUT {
+    background: linear-gradient(90deg, #5b0085 0%, #002aff 100%);
+    border: 3px solid #001545;
+    border-radius: 6px;
+    color: #bfffbf;
+    font-family: "Iceland", monospace;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-style: italic;
+    line-height: 1;
+    mix-blend-mode: difference;
+    overflow: auto;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    width:70%;
+}
+
+.PRINT {
+    color: #ffffff;
+    font-family: 'Iceland', monospace;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 0 0 1px #000000;
+}
+
+
+@keyframes Ops {
+    50% { opacity: 0%; }
+    0%,100% { opacity: 100%; }
+  }
+
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+    20%, 22%, 24%, 55% { opacity: 0.4; }
+}
+
+@keyframes statusGlow {
+    from { text-shadow: 0 0 5px #4000ff; }
+    to { text-shadow: 0 0 20px #9900ff; }
+}
+
+@keyframes neonGlow {
+    from { box-shadow: 0 0 5px #0ff; }
+    to { box-shadow: 0 0 20px #ff00e6; }
+}
+
+@keyframes moveBg {
+    0% { background-position: 0 0; }
+    100% { background-position: 500px 500px; }
+}
+
+@keyframes rotateLogo {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

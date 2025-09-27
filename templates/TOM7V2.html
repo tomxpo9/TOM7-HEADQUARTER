@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOM7 BOTNET HEADQUARTER</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="HEADQUARTER">
+    <h2 class="WHOAMI" id="MATRIX"></h2>
+    <div class="OPTIONS">
+        {% for script, status in scripts.items() %}
+        <div class="TOOLS-OPTIONS" data-script="{{ script }}">
+            <h2 class="TOOLS-NAME">{{ aliases[script] }}</h2>
+            <p class="TOOLS-STATUS">BOTNET STATUS:
+                <span class="status {% if status=='Services Not Available!' %}not-available{% endif %}"
+                id="status-{{ script|replace('.','-') }}">{{ status }}</span>
+            </p>
+            <div class="OPTIONS-BTN">
+                <button onclick="runScript('{{ script }}')">EXPLOIT</button>
+                <button onclick="stopToolConfirm('{{ script }}')">STOP</button>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <p class="MSG">
+        Headquarter Of TOM7. All Tools Were Made For Cyber Weapon. I Will Not Be Responsible For Any Destruction Caused. All Responsibility Is Yours.<br>Algorithm Destroyer<br>Network Maniacs<br>System Of Down<br><br>A true hacker of the underground web is defined not by destruction but by curiosity and the relentless drive to understand systems that others ignore. In the hidden layers of the internet, where anonymity can be a refuge for freedom or a mask for abuse, the genuine seeker approaches every vulnerability as a lesson, every obscure protocol as a doorway to knowledge, and every encrypted wall as an invitation to think deeper. This underground realm is not only a place of darkness but also a living library of forgotten technologies and overlooked ideas, a space where privacy, encryption and digital autonomy are constantly tested, challenged and reshaped by those who dare to explore without surrendering their ethics.<br><br>Cybersecurity in the underground web is not about locking every door but about understanding how doors are built, how they break and how they can be rebuilt stronger and fairer. Real security is never static but a discipline of anticipation and adaptation. In shifting networks hidden from the mainstream, defenders must think like explorers, mapping threats and patching weaknesses while respecting openness and privacy. The underground web mirrors the surface internet and reminds us that every technology has two edges and that the ethics of those who wield it determine its true impact. This is why the strongest security professionals are also the most thoughtful, knowing that knowledge without conscience leads only to chaos.<br><br>The underground web teaches that freedom and danger coexist. Within hidden forums and encrypted channels, ideals about decentralisation, anonymity and free expression are debated alongside attempts at exploitation.        
+    </p>
+    <div class="LOGO"></div>
+    <h2 class="COPY">&copy;TOM7 2025</h2>
+    <!-- PTY interactive shell panel (centered under .COPY) -->
+    <div class="TCONTAINER">
+        <div class="CMDWRAP" id="pty-wrapper">
+            <div class="CMD-CLI-OUT" id="pty-output"></div>
+            <div class="CMD-BTN">
+                <input class="CMD-CLI-INPUT" id="pty-input" type="text" placeholder="Type here to send to shell (press Enter to send)">
+                <button id="pty-send">ENTER</button>
+                <button id="pty-ctrlc" disabled>CTRL+C</button>
+                <button id="pty-ctrlz" disabled>CTRL+Z</button>
+                <button id="pty-clear">Clear Output</button>
+                <button id="pty-start">Start Shell</button>
+            </div>
+            <div class="PRINT">Interactive shell: use this for live commands. For interactive TTY apps prefer Run (Terminal).</div>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="{{ url_for('static', filename='script2.js') }}"></script>
+<script src="{{ url_for('static', filename='script3.js') }}"></script>
+<!---<script src="{{ url_for('static', filename='script4.js') }}"></script>--->
+</body>
+</html>

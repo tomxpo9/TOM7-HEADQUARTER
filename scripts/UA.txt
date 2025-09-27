@@ -1,0 +1,105 @@
+Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
+Mozilla/5.0 (X11; Linux x86_64)
+Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X)
+Mozilla/5.0 (Linux; Android 9; Pixel 3)
+curl/7.68.0
+Wget/1.20.3 (linux-gnu)
+python-requests/2.25.1
+PostmanRuntime/7.26.8
+Mozilla/5.0 (Linux; Android 10; SM-G973F)
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0)
+Mozilla/5.0 (iPad; CPU OS 13_2 like Mac OS X)
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+Slackbot 1.0 (+https://api.slack.com/robots)
+WhatsApp/2.19.51 A
+FacebookExternalHit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+Twitterbot/1.0
+Bingbot/2.0 (+http://www.bing.com/bingbot.htm)
+Mozilla/5.0 (PlayStation 4 3.11) AppleWebKit/537.73
+Mozilla/5.0 (Windows NT 5.1; rv:40.0)
+Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro)
+Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
+Mozilla/5.0 (X11; Linux x86_64)
+Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X)
+Mozilla/5.0 (Linux; Android 9; Pixel 3)
+curl/7.68.0
+Wget/1.20.3 (linux-gnu)
+python-requests/2.25.1
+PostmanRuntime/7.26.8
+Mozilla/5.0 (Linux; Android 10; SM-G973F)
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0)
+Mozilla/5.0 (iPad; CPU OS 13_2 like Mac OS X)
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+Slackbot 1.0 (+https://api.slack.com/robots)
+WhatsApp/2.19.51 A
+FacebookExternalHit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+Twitterbot/1.0
+Bingbot/2.0 (+http://www.bing.com/bingbot.htm)
+Mozilla/5.0 (PlayStation 4 3.11) AppleWebKit/537.73
+Mozilla/5.0 (Windows NT 5.1; rv:40.0)
+Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro)
+Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
+Mozilla/5.0 (X11; Linux x86_64)
+Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X)
+Mozilla/5.0 (Linux; Android 9; Pixel 3)
+curl/7.68.0
+Wget/1.20.3 (linux-gnu)
+python-requests/2.25.1
+PostmanRuntime/7.26.8
+Mozilla/5.0 (Linux; Android 10; SM-G973F)
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0)
+Mozilla/5.0 (iPad; CPU OS 13_2 like Mac OS X)
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+Slackbot 1.0 (+https://api.slack.com/robots)
+WhatsApp/2.19.51 A
+FacebookExternalHit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+Twitterbot/1.0
+Bingbot/2.0 (+http://www.bing.com/bingbot.htm)
+Mozilla/5.0 (PlayStation 4 3.11) AppleWebKit/537.73
+Mozilla/5.0 (Windows NT 5.1; rv:40.0)
+Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro)
+Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
+Mozilla/5.0 (X11; Linux x86_64)
+Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X)
+Mozilla/5.0 (Linux; Android 9; Pixel 3)
+curl/7.68.0
+Wget/1.20.3 (linux-gnu)
+python-requests/2.25.1
+PostmanRuntime/7.26.8
+Mozilla/5.0 (Linux; Android 10; SM-G973F)
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0)
+Mozilla/5.0 (iPad; CPU OS 13_2 like Mac OS X)
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+Slackbot 1.0 (+https://api.slack.com/robots)
+WhatsApp/2.19.51 A
+FacebookExternalHit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+Twitterbot/1.0
+Bingbot/2.0 (+http://www.bing.com/bingbot.htm)
+Mozilla/5.0 (PlayStation 4 3.11) AppleWebKit/537.73
+Mozilla/5.0 (Windows NT 5.1; rv:40.0)
+Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro)
+Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
+Mozilla/5.0 (X11; Linux x86_64)
+Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X)
+Mozilla/5.0 (Linux; Android 9; Pixel 3)
+curl/7.68.0
+Wget/1.20.3 (linux-gnu)
+python-requests/2.25.1
+PostmanRuntime/7.26.8
+Mozilla/5.0 (Linux; Android 10; SM-G973F)
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0)
+Mozilla/5.0 (iPad; CPU OS 13_2 like Mac OS X)
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+Slackbot 1.0 (+https://api.slack.com/robots)
+WhatsApp/2.19.51 A
+FacebookExternalHit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+Twitterbot/1.0
+Bingbot/2.0 (+http://www.bing.com/bingbot.htm)
+Mozilla/5.0 (PlayStation 4 3.11) AppleWebKit/537.73
+Mozilla/5.0 (Windows NT 5.1; rv:40.0)
+Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro)
