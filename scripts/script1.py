@@ -10,7 +10,7 @@ import jwt
 BG_IMAGE = "TOM.jpg"
 AI_NAME = "TOM7X GPT V12"
 DB_FILE = "TOM7UltimateGPTV13.db"
-BREACH_API_KEY = "b5ccaf4ecemsh68a8d93af91787cp139659jsn546b0cfdfdf7"
+BREACH_API_KEY = "YOUR BREACH API KEY"
 
 ALL_TOOLS = [
     "Nmap Scan","SQLMap","Hydra","Dirsearch","WPScan","Nikto","Masscan","Metasploit",
